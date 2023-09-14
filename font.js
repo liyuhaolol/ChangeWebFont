@@ -12,6 +12,7 @@
 // @match        *://tamashiiweb.com/*
 // @icon         http://www.zku.net/favicon.ico
 // @grant        GM_addStyle
+// @license MIT
 // ==/UserScript==
 
 GM_addStyle(`
