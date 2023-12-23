@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         修改网页字体
 // @namespace    https://github.com/liyuhaolol/ChangeWebFont
-// @version      1.2
+// @version      1.3
 // @description  覆盖网页的body默认字体样式
 // @author       菜狗子
 // @updateURL    https://fastly.jsdelivr.net/gh/liyuhaolol/ChangeWebFont/font.js
@@ -70,6 +70,14 @@ function changeJpFont(){
     var aElement = pElementJumpBtn[0].querySelector('a');
     if(aElement != null){
       aElement.style.fontFamily = '宋体,SimSun,Arial,sans-serif';
+    }
+  }
+  //修改类目字体
+  var cardttl = document.getElementsByClassName('card_ttl');
+  if(cardttl != null){
+    for (var i = 0; i < cardttl.length; i++) {
+      var element = cardttl[i];
+      element.style.fontFamily = 'MiSans VF,MiSans,PingFang SC,Microsoft Yahei,Arial,sans-serif';
     }
   }
 }
