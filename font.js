@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         修改网页字体
 // @namespace    https://github.com/liyuhaolol/ChangeWebFont
-// @version      1.3
+// @version      1.4
 // @description  覆盖网页的body默认字体样式
 // @author       菜狗子
 // @updateURL    https://fastly.jsdelivr.net/gh/liyuhaolol/ChangeWebFont/font.js
@@ -51,7 +51,7 @@ function changeJpFont(){
   var pElementTitle = document.getElementsByClassName('intro_txt');
   if(pElementTitle != null){
     //console.log(pElement);
-    pElementTitle[0].style.fontFamily = '宋体,SimSun,Arial,sans-serif';
+    pElementTitle[0].style.fontFamily = '宋体,宋体-简,SimSun,Arial,sans-serif';
   }
   //修改跳转按钮字体
   var pElementJumpBtns= document.getElementsByClassName('linkbtn_s');
@@ -60,7 +60,7 @@ function changeJpFont(){
     pArray.forEach(function (pElement) {
       var aElement = pElement.querySelector('a');
       if(aElement != null){
-        aElement.style.fontFamily = '宋体,SimSun,Arial,sans-serif';
+        aElement.style.fontFamily = '宋体,宋体-简,SimSun,Arial,sans-serif';
       }
     });
   }
@@ -69,7 +69,7 @@ function changeJpFont(){
   if(pElementJumpBtn != null){
     var aElement = pElementJumpBtn[0].querySelector('a');
     if(aElement != null){
-      aElement.style.fontFamily = '宋体,SimSun,Arial,sans-serif';
+      aElement.style.fontFamily = '宋体,宋体-简,SimSun,Arial,sans-serif';
     }
   }
   //修改类目字体
